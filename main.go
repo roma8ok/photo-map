@@ -101,8 +101,9 @@ func main() {
 	markers := make([]string, 0, len(pathsWithinCoordinates))
 	for _, image := range pathsWithinCoordinates {
 		markerString := fmt.Sprintf(
-			`    L.circleMarker([%f, %f]).addTo(mymap).bindPopup("<a href='%s' target='_blank'>%s</a>");`,
-			image.Lat, image.Long, image.Path, image.DateTime.Format("2006-01-02 15:04:05"))
+			`    L.circleMarker([%f, %f], { color: "#343E40", weight: 1, fillColor: "%s", fillOpacity: 0.5 }).addTo(mymap).bindPopup("<a href='%s' target='_blank'>%s</a>");`,
+			image.Lat, image.Long, additional.ConvertYearToColor(image.DateTime.Year()),
+			image.Path, image.DateTime.Format("2006-01-02 15:04:05"))
 		markers = append(markers, markerString)
 	}
 

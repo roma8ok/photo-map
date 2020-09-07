@@ -1026,7 +1026,6 @@ const StartHTML = `
       return L;
     }));
   </script>
-  <script src="photo-map-leaflet-providers.js"></script>
   <title>Photo map</title>
   <style type="text/css" media="screen">
     #mapid { height: 95vh; }
