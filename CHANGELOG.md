@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.0.3 - 2020-09-08
+### Features
+- Add demo video.
+- Add code analyzer (codeclimate).
+
+---
+
 ## 0.0.2 - 2020-09-07
 ### Features
 - Add different colors to different years.
