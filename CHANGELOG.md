@@ -1,4 +1,6 @@
-# CHANGELOG
+## In progress
+- Added markers clusters.
+- Added popup image preview.
 
 ## 0.0.4 - 2020-10-05
 ### Fix
